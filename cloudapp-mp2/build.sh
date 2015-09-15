@@ -4,11 +4,11 @@ rm -rf build/*;
 
 hadoop fs -rm -r /mp2/*-output/;
 
-hadoop com.sun.tools.javac.Main OrphanPages.java -d build;
+hadoop com.sun.tools.javac.Main TopPopularLinks.java -d build;
 
-jar -cvf OrphanPages.jar -C build/ ./;
+jar -cvf TopPopularLinks.jar -C build/ ./;
 
-hadoop jar OrphanPages.jar OrphanPages /mp2/links /mp2/D-output;
+hadoop jar TopPopularLinks.jar TopPopularLinks -D N=5 /mp2/links /mp2/D-output;
 
 
 
