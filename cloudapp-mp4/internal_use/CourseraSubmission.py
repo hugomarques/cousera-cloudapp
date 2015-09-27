@@ -136,7 +136,10 @@ class CourseraSubmission(object):
     def init(self):
         print '==\n== [sandbox] Submitting Solutions \n=='
 
-        (self.email, self.password) = self._login_prompt()
+        #(self.email, self.password) = self._login_prompt()
+        self.email = 'hugodesmarques@gmail.com'
+        self.password = '7mDfRm4QH2'
+
         if not self.email:
             print '!! Submission Cancelled'
             return False
