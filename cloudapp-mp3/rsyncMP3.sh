@@ -1,2 +1,2 @@
 #!/bin/bash
-rsync -r ./* root@54.86.186.219:/root/cloudapp-mp3
+rsync -r ./* root@ec2-54-175-109-10.compute-1.amazonaws.com:/root/cloudapp-mp3
